@@ -87,7 +87,7 @@ export default class RunnerPage extends Component {
 
             }
 
-        }else if (event.key == "Left WinKey" || event.key == "Meta" || event.key == "Command" || event.key == "Alt" || event.key == "Control") { //HANDLE Improper Key Presses
+        }else if (event.key === "Left WinKey" || event.key === "Meta" || event.key === "Command" || event.key === "Alt" || event.key === "Control") { //HANDLE Improper Key Presses
             //DO NOTHING
         } else if (!isNaN(event.key)) {
             this.navigateToPage(event.key);
@@ -103,7 +103,7 @@ export default class RunnerPage extends Component {
         var actions = page.actions;
         var currentAction = actions[key];
 
-        if (currentAction != undefined) {
+        if (currentAction !== undefined) {
             if(currentAction.name === "sys-end"){
             }else{
                 message.info(`Added: ${currentAction.name}`, 1);
@@ -161,7 +161,7 @@ export default class RunnerPage extends Component {
 
     generateButtonMap() {
         var pageconfig = this.state.config.ui.pages[this.state.page];
-        if (pageconfig == undefined) {
+        if (pageconfig === undefined) {
             this.setState({page: this.state.page - 1});
         }
         var buttonconfig = pageconfig.layout;
@@ -196,7 +196,8 @@ export default class RunnerPage extends Component {
             var menuItems = this.state.config.ui.pages;
 
             var menu = menuItems.map((item) =>
-                <div className={"sidebarItem"} onClick={() => this.navigateToPage(item.btn)}><a key={item.btn}
+                <div className={"sidebarItem"} onClick={() => this.navigateToPage(item.btn)}>
+                    <a key={item.btn}
                                                                                                 className={"sidebarButton"}>{item.name} ({item.btn})</a>
                 </div>
             );

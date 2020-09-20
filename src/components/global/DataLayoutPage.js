@@ -27,7 +27,7 @@ export default class DataLayoutPage extends Component {
     }
 
     updateMatchNum(matchNum) {
-        if (matchNum != undefined) {
+        if (matchNum !== undefined) {
 
             this.setState({matchNum: matchNum.target.value});
 

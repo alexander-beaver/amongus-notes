@@ -55,17 +55,17 @@ export default class TopLevel extends Component {
     }
 
     render() {
-        if (this.state.mode == "auth") {
+        if (this.state.mode === "auth") {
             return <Auth/>
         }
-        if (this.state.mode == "dataEntry") {
+        if (this.state.mode === "dataEntry") {
             return <DataLayoutPage pos={this.state.pos} callback={(params) => this.configCallback(params)}
                                    positionCallback={(params) => this.updatePositionCallback(params)}/>
-        } else if (this.state.mode == "match") {
+        } else if (this.state.mode === "match") {
             return <RunnerPage callback={(params) => this.runnerCallback(params)}/>
-        } else if (this.state.mode == "postMatch") {
+        } else if (this.state.mode === "postMatch") {
             return (<CommentPage callback={(params) => this.postMatchCallback(params)}/>)
-        } else if (this.state.mode == "upload") {
+        } else if (this.state.mode === "upload") {
             return <UploadPage data={this.state} callback={() => this.resetPage()}/>;
         } else {
             this.setState({mode: "dataEntry"});

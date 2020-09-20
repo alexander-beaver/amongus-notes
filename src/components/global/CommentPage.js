@@ -10,8 +10,7 @@ const {TextArea} = Input;
 
 
 const {Option} = Select;
-const {Meta} = Card;
-const InputGroup = Input.Group;
+
 
 export default class CommentPage extends Component {
     configURL = APIConnect.SCOUTING_ENDSTATES;
@@ -66,7 +65,7 @@ export default class CommentPage extends Component {
     }
 
     render() {
-        if (this.state.config == undefined) {
+        if (this.state.config === undefined) {
             return (<p>Loading</p>)
         }
 
