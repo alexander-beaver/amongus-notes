@@ -1,0 +1,253 @@
+{
+    "config":{
+        "teamNum":0,
+        "matchType":"AU_SKELD",
+        "matchNum":1
+
+    },
+    "ui":{
+        "pages":[ 
+            {
+                "name":"Enter Room",
+                "btn":1,
+                "layout":[
+                    [
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        },
+                        {
+                            "btn":"y"
+                        }
+                        
+                        
+                    ],
+                    [
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"f"
+                        },
+                        {
+                            "btn":"g"
+                        },
+                        {
+                            "btn":"h"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        },
+                        {
+                            "btn":"v"
+                        },
+                        {
+                            "btn":"b"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "a":{
+                        "name":"Reactor",
+                        "id":"enter-react",
+                        "bkg":"black"
+                    },
+                    "b":{
+                        "name":"Shields",
+                        "id":"enter-shields"
+                    },
+                    "c":{
+                        "name":"Storage",
+                        "id":"enter-storage"
+                    },
+                    "e":{
+                        "name":"MedBay",
+                        "id":"enter-med",
+                        "bkg":"black"
+                    },
+                    "f":{
+                        "name":"Admin",
+                        "id":"enter-admin",
+                        "bkg":"black"
+                    },
+                    "g":{
+                        "name":"O2",
+                        "id":"enter-o2"
+                    },
+                    "h":{
+                        "name":"Navigation",
+                        "id":"enter-nav",
+                        "bkg":"black"
+                    },
+                    "r":{
+                        "name":"Cafe",
+                        "id":"enter-cafe"
+                    },
+                    "s":{
+                        "name":"Security",
+                        "id":"enter-sec"
+                    },
+                    "v":{
+                        "name":"Comms",
+                        "id":"enter-comms",
+                        "bkg":"black"
+                    },
+                    "w":{
+                        "name":"Upper Engine",
+                        "id":"enter-ue"
+                    },
+                    "x":{
+                        "name":"Electrical",
+                        "id":"enter-elec",
+                        "bkg":"black"
+                    },
+                    "y":{
+                        "name":"Weapons",
+                        "id":"enter-wep",
+                        "bkg":"black"
+                    },
+                    "z":{
+                        "name":"Lower Engine",
+                        "id":"enter-le"
+                    }
+                    
+                    
+                    
+                }
+
+            },
+
+
+            {
+                "name":"See Player",
+                "btn":2,
+                "layout":[
+                    [
+                        {
+                            "btn":"q"
+                        },
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        }
+                    ],
+                    [
+                        
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"d"
+                        },
+                        {
+                            "btn":"f"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        },
+                        {
+                            "btn":"v"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "q":{
+                        "name":"See Red",
+                        "id":"see-red",
+                        "bkg":"red"
+                    },
+                    "w":{
+                        "name":"See Orange",
+                        "id":"see-orange",
+                        "bkg":"orange"
+                    },
+                    "e":{
+                        "name":"See Yellow",
+                        "id":"see-yellow",
+                        "bkg":"yellow"
+                    },
+                    "r":{
+                        "name":"Trust Player",
+                        "id":"trust-player"
+                    },
+                    "a":{
+                        "name":"See Green",
+                        "id":"see-green",
+                        "bkg":"green"
+                    },
+                    "s":{
+                        "name":"See Cyan",
+                        "id":"see-cyan",
+                        "bkg":"cyan"
+                    },
+                    "d":{
+                        "name":"See Blue",
+                        "id":"see-blue",
+                        "bkg":"blue"
+                    },
+                    "f":{
+                        "name":"See Purple",
+                        "id":"see-purple",
+                        "bkg":"purple"
+                    },
+                    "z":{
+                        "name":"See Black",
+                        "id":"see-black",
+                        "bkg":"black"
+                    },
+                    "x":{
+                        "name":"See Brown",
+                        "id":"see-brown",
+                        "bkg":"brown"
+                    },
+                    "c":{
+                        "name":"See Pink",
+                        "id":"see-pink",
+                        "bkg":"pink"
+                    },
+                    "v":{
+                        "name":"Suspect Player",
+                        "id":"sus-player"
+                    }
+                
+                }
+            
+
+            }
+        ]
+    }
+}

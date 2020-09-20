@@ -1,0 +1,167 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.sidebar{
+    width: 100%;
+    height: 100vh;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+.pageContent{
+    width: 100%;
+    height: 100%;
+    flex: 7;
+    display: flex;
+    max-height: available;
+}
+.sidebarItem{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1;
+    font-size: 16pt;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+
+}
+.sidebarButton{
+    text-decoration: none;
+    color: #ff8600;
+    font-size: 16pt;
+}
+
+.map{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.mapCol{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    border-width: 10px;
+
+}
+.mapRow{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+
+}
+.mapEl{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14pt;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.log{
+height: 50vh; overflow: auto; overflow-x: hidden;
+    text-align: left;
+    flex: 1;
+}
+
+
+.dlRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+
+.dlItem{
+    width: 100%;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.bg-red{
+    background-color: #ED5565;
+    color: #ffffff;
+}
+.bg-orange{
+    background-color: #FC6e51;
+    color: #ffffff;
+}
+.bg-yellow{
+    background-color: #FFCE54;
+}
+.bg-green{
+    background-color: #A0D468;
+}
+.bg-cyan{
+    background-color: #48CFAD;
+}
+.bg-blue{
+    background-color: #5D9CEC;
+    color: #ffffff;
+}
+.bg-purple{
+    background-color: #AC92EC;
+}
+.bg-pink{
+    background-color: #EC87C0;
+}
+.bg-black{
+    background-color: #424953;
+    color: #ffffff;
+}
+.bg-brown{
+    background-color: #8D6E63;
+    color: #ffffff;
+}
+@media only screen and (min-width: 768px) {
+    .mapEl, .sidebarButton{
+        font-size: 18pt;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .mapEl, .sidebarButton{
+        font-size: 24pt;
+    }
+}
+@media only screen and (min-width: 2048px) {
+    .mapEl, .sidebarButton{
+        font-size: 26pt;
+    }
+}
