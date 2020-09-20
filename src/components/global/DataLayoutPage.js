@@ -3,16 +3,12 @@ import React, {Component} from "react";
 
 import "../../assets/css/materialIcons.css";
 import "../../assets/css/matchScoutGlobal.css";
-import {Button, message, Select} from 'antd';
+import {Button, message} from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
-
-
-const {Option} = Select;
-
 
 export default class DataLayoutPage extends Component {
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.setState({matchType: "QUAL", matchNum: 1, pos: this.props.pos});
         this.updateType = this.updateType.bind(this);
         this.updateMatchNum = this.updateMatchNum.bind(this);
@@ -37,6 +33,7 @@ export default class DataLayoutPage extends Component {
 
     updatePos(pos) {
         message.info(`Updated Position: ${pos}`, 1);
+        // eslint-disable-next-line react/prop-types
         this.props.positionCallback(pos);
 
         this.setState({pos: pos});
@@ -45,6 +42,7 @@ export default class DataLayoutPage extends Component {
 
     submit() {
         console.log("SUBMITTING");
+        // eslint-disable-next-line react/prop-types
         this.props.callback({matchNum: 1});
     }
 

@@ -1,4 +1,4 @@
-export default class APIConnect {
+export default class APIConnect{
     // This uses a CORS bypass system to a Google Cloud Storage system. Replace this with the server URL.
     static BASE_URL = "https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/among-us-cdn/";
 

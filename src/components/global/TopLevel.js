@@ -22,7 +22,7 @@ const initialState = {
  * This is a significantly modified clone of another app, so some components may not be used.
  */
 export default class TopLevel extends Component {
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.configCallback = this.configCallback.bind(this);
         this.runnerCallback = this.runnerCallback.bind(this);
         this.postMatchCallback = this.postMatchCallback.bind(this);
@@ -30,11 +30,11 @@ export default class TopLevel extends Component {
         this.setState({mode: "dataEntry", pos: "B1"});
     }
 
-    configCallback(params) {
+    configCallback() {
         this.setState({mode: "match", pos: "B1"});
     }
 
-    runnerCallback(params) {
+    runnerCallback() {
         this.setState({mode: "dataEntry", pos:"B1"});
     }
 

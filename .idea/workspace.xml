@@ -20,8 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13240c38-42dd-42a4-a241-84ac4e71ed46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/global/CommentPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/CommentPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIConnect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIConnect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/global/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/global/DataLayoutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/DataLayoutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/global/TopLevel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/TopLevel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1XfVdHoT3nPLiAVuzAadUkR1Gqo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,16 +61,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -118,7 +136,9 @@
       <workItem from="1600541151114" duration="1074000" />
       <workItem from="1600559639439" duration="2345000" />
       <workItem from="1600562236996" duration="9977000" />
-      <workItem from="1600581760107" duration="1467000" />
+      <workItem from="1600581760107" duration="1781000" />
+      <workItem from="1600583897446" duration="736000" />
+      <workItem from="1600584727764" duration="405000" />
     </task>
     <servers />
   </component>
@@ -138,14 +158,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2882" y="985" width="308" height="231" key="#ESLint" timestamp="1600584821306">
+      <screen x="1080" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2882" y="985" width="308" height="231" key="#ESLint/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600584821306" />
     <state x="1759" y="895" width="639" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600579567165">
       <screen x="1080" y="0" width="3840" height="2160" />
     </state>
     <state x="1759" y="895" width="639" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600579567165" />
-    <state x="2772" y="946" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600582857103">
+    <state x="2772" y="946" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600583472355">
       <screen x="1080" y="0" width="3840" height="2160" />
     </state>
-    <state x="2772" y="946" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600582857103" />
+    <state x="2772" y="946" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600583472355" />
     <state x="3623" y="836" width="432" height="484" key="FileChooserDialogImpl" timestamp="1592956167547">
       <screen x="1920" y="0" width="3840" height="2160" />
     </state>
@@ -166,5 +190,9 @@
       <screen x="1080" y="0" width="3840" height="2160" />
     </state>
     <state width="3745" height="632" key="GridCell.Tab.0.right/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600582536377" />
+    <state x="2525" y="728" width="1022" height="737" key="SettingsEditor" timestamp="1600584531701">
+      <screen x="1080" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2525" y="728" width="1022" height="737" key="SettingsEditor/1080.0.3840.2160/0.240.1080.1920/4920.0.3840.2160@1080.0.3840.2160" timestamp="1600584531701" />
   </component>
 </project>

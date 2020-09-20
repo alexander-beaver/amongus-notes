@@ -8,14 +8,17 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 export default class Auth extends Component {
 
-    images = [
-        "brazil",
-        "stars",
-        "singapore",
-        "hk"
-    ]
 
-    componentWillMount() {
+    constructor(props) {
+        super(props);
+        this.images = [
+            "brazil",
+            "stars",
+            "singapore",
+            "hk"
+        ];
+    }
+    UNSAFE_componentWillMount() {
         this.setState({bkg: this.getRandomBKG()})
     }
 
