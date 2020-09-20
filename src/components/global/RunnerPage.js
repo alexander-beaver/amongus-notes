@@ -42,7 +42,7 @@ export default class RunnerPage extends Component {
     }
 
     navigateToPage(page) {
-        var maxpage = 6;
+        var maxpage = 7;
         if (page === 0) {
             page = 10;
         }
@@ -73,8 +73,19 @@ export default class RunnerPage extends Component {
     handleKeyPress = (event) => {
 
         if(event.keyCode === 32){
-            this.state.actions.push({time: this.state.timer, type: " "});
-            this.setState({alternator: !this.state.alternator});
+            var pageID = this.state.page;
+
+            var page = this.state.config.ui.pages[pageID];
+
+            var actions = page.actions;
+            if(actions["space"].id === "sys-end"){
+                this.onComplete();
+
+            }else{
+                this.state.actions.push({time: this.state.timer, type: " "});
+                this.setState({alternator: !this.state.alternator});
+
+            }
 
         }else if (event.key == "Left WinKey" || event.key == "Meta" || event.key == "Command" || event.key == "Alt" || event.key == "Control") { //HANDLE Improper Key Presses
             //DO NOTHING
@@ -88,17 +99,22 @@ export default class RunnerPage extends Component {
     processAction(key) {
         var pageID = this.state.page;
         var page = this.state.config.ui.pages[pageID];
+
         var actions = page.actions;
         var currentAction = actions[key];
 
         if (currentAction != undefined) {
-            message.info(`Added: ${currentAction.name}`, 1);
+            if(currentAction.name === "sys-end"){
+            }else{
+                message.info(`Added: ${currentAction.name}`, 1);
 
-            this.state.actions.push({time: this.state.timer, type: currentAction.id});
-            var msg = new SpeechSynthesisUtterance(currentAction.name);
-            window.speechSynthesis.speak(msg);
-            console.log(this.state.actions);
-            this.setState({alternator: !this.state.alternator});
+                this.state.actions.push({time: this.state.timer, type: currentAction.id});
+                var msg = new SpeechSynthesisUtterance(currentAction.name);
+                window.speechSynthesis.speak(msg);
+                console.log(this.state.actions);
+                this.setState({alternator: !this.state.alternator});
+            }
+
         }
 
 

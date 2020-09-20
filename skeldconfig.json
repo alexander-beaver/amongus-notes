@@ -756,7 +756,7 @@
                         "bkg":"orange"
                         },
                     "s":{
-                        "name":"Accepted Diverted Power",
+                        "name":"Accept Diverted Power",
                         "id":"Navigation: Accepted Diverted Power",
                         "bkg":"orange"
                     },
@@ -804,6 +804,24 @@
                 }
             
 
+            },
+            {
+                "name":"Match",
+                "btn":7,
+                "layout":[
+                    [
+                        {
+                            "btn":"space"
+                        }
+                    ]
+                ],
+                "actions":{
+                    "space":{
+                        "name":"END",
+                        "id": "sys-end",
+                        "bkg": "red"
+                    }
+                }
             }
         ]
     }

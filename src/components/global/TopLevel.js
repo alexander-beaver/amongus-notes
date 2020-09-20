@@ -16,7 +16,11 @@ const initialState = {
     postMatch: {}
 };
 
-
+/**
+ * The top level for the application
+ *
+ * This is a significantly modified clone of another app, so some components may not be used.
+ */
 export default class TopLevel extends Component {
     componentWillMount() {
         this.configCallback = this.configCallback.bind(this);
@@ -27,11 +31,11 @@ export default class TopLevel extends Component {
     }
 
     configCallback(params) {
-        this.setState({mode: "match", config: params});
+        this.setState({mode: "match", pos: "B1"});
     }
 
     runnerCallback(params) {
-        this.setState({mode: "postMatch", matchData: params});
+        this.setState({mode: "dataEntry", pos:"B1"});
     }
 
     postMatchCallback(params) {
