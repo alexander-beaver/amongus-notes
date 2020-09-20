@@ -41,7 +41,7 @@
 }
 .sidebarButton{
     text-decoration: none;
-    color: #ff8600;
+    color: #5D9CEC;
     font-size: 16pt;
 }
 
@@ -138,6 +138,7 @@ height: 50vh; overflow: auto; overflow-x: hidden;
 }
 .bg-purple{
     background-color: #AC92EC;
+    color: #ffffff;
 }
 .bg-pink{
     background-color: #EC87C0;

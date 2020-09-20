@@ -23,6 +23,9 @@
                         },
                         {
                             "btn":"y"
+                        },
+                        {
+                            "btn":"u"
                         }
                         
                         
@@ -60,75 +63,87 @@
                         {
                             "btn":"b"
                         }
+                    ],
+                    [
+                        {
+                            "btn":"space"
+                        }
                     ]
 
                 ],
                 "actions":{
                     "a":{
                         "name":"Reactor",
-                        "id":"enter-react",
+                        "id":"Reactor: Entered",
                         "bkg":"black"
-                    },
+                        },
                     "b":{
                         "name":"Shields",
-                        "id":"enter-shields"
+                        "id":"Shields: Entered"
                     },
                     "c":{
                         "name":"Storage",
-                        "id":"enter-storage"
+                        "id":"Storage: Entered"
                     },
                     "e":{
                         "name":"MedBay",
-                        "id":"enter-med",
+                        "id":"MedBay: Entered",
                         "bkg":"black"
                     },
                     "f":{
                         "name":"Admin",
-                        "id":"enter-admin",
+                        "id":"Admin: Entered",
                         "bkg":"black"
                     },
                     "g":{
                         "name":"O2",
-                        "id":"enter-o2"
+                        "id":"O2: Entered"
                     },
                     "h":{
                         "name":"Navigation",
-                        "id":"enter-nav",
+                        "id":"Navigation: Entered",
                         "bkg":"black"
                     },
                     "r":{
                         "name":"Cafe",
-                        "id":"enter-cafe"
+                        "id":"Cafeteria: Entered"
                     },
                     "s":{
                         "name":"Security",
-                        "id":"enter-sec"
+                        "id":"Security: Entered"
+                    },
+                    "u":{
+                        "name":"Died",
+                        "id":"Player died"
                     },
                     "v":{
                         "name":"Comms",
-                        "id":"enter-comms",
+                        "id":"Comms: Entered",
                         "bkg":"black"
                     },
                     "w":{
                         "name":"Upper Engine",
-                        "id":"enter-ue"
+                        "id":"Upper Engine: Entered"
                     },
                     "x":{
                         "name":"Electrical",
-                        "id":"enter-elec",
+                        "id":"Electrical: Entered",
                         "bkg":"black"
                     },
                     "y":{
                         "name":"Weapons",
-                        "id":"enter-wep",
+                        "id":"Weapons: Entered",
                         "bkg":"black"
                     },
                     "z":{
                         "name":"Lower Engine",
-                        "id":"enter-le"
+                        "id":"Lower Engine: Entered"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
                     }
-                    
-                    
                     
                 }
 
@@ -181,67 +196,609 @@
                         {
                             "btn":"v"
                         }
+                    ],
+                    [
+                        {
+                            "btn":"space"
+                        }
                     ]
 
                 ],
                 "actions":{
                     "q":{
-                        "name":"See Red",
-                        "id":"see-red",
+                        "name":"Red",
+                        "id":"Saw red",
                         "bkg":"red"
                     },
                     "w":{
-                        "name":"See Orange",
-                        "id":"see-orange",
+                        "name":"Orange",
+                        "id":"Saw orange",
                         "bkg":"orange"
                     },
                     "e":{
-                        "name":"See Yellow",
-                        "id":"see-yellow",
+                        "name":"Yellow",
+                        "id":"Saw yellow",
                         "bkg":"yellow"
                     },
                     "r":{
                         "name":"Trust Player",
-                        "id":"trust-player"
+                        "id":"Trust player"
                     },
                     "a":{
-                        "name":"See Green",
-                        "id":"see-green",
+                        "name":"Green",
+                        "id":"Saw green",
                         "bkg":"green"
                     },
                     "s":{
-                        "name":"See Cyan",
-                        "id":"see-cyan",
+                        "name":"Cyan",
+                        "id":"Saw cyan",
                         "bkg":"cyan"
                     },
                     "d":{
-                        "name":"See Blue",
-                        "id":"see-blue",
+                        "name":"Blue",
+                        "id":"Saw blue",
                         "bkg":"blue"
                     },
                     "f":{
-                        "name":"See Purple",
-                        "id":"see-purple",
+                        "name":"Purple",
+                        "id":"Saw purple",
                         "bkg":"purple"
                     },
                     "z":{
-                        "name":"See Black",
-                        "id":"see-black",
+                        "name":"Black",
+                        "id":"Saw black",
                         "bkg":"black"
                     },
                     "x":{
-                        "name":"See Brown",
-                        "id":"see-brown",
+                        "name":"Brown",
+                        "id":"Saw brown",
                         "bkg":"brown"
                     },
                     "c":{
-                        "name":"See Pink",
-                        "id":"see-pink",
+                        "name":"Pink",
+                        "id":"Saw pink",
                         "bkg":"pink"
                     },
                     "v":{
                         "name":"Suspect Player",
-                        "id":"sus-player"
+                        "id":"Sus player"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
+                    }
+                
+                }
+            
+
+            },
+            {
+                "name":"Left Map",
+                "btn":3,
+                "layout":[
+                    [
+                        {
+                            "btn":"q"
+                        },
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        }
+                    ],
+                    [
+                        
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"d"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        },
+                        {
+                            "btn":"v"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"j"
+                        },
+                        {
+                            "btn":"k"
+                        },
+                        {
+                            "btn":"space"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "q":{
+                        "name":"Upper Engine",
+                        "id":"Upper Engine: Entered",
+                        "bkg":"red"
+                    },
+                    "w":{
+                        "name":"Accept Diverted Power",
+                        "id":"Upper Engine: Accept Diverted Power",
+                        "bkg":"red"
+                    },
+                    "e":{
+                        "name":"Align Engine Output",
+                        "id":"Upper Engine: Align Engine Output",
+                        "bkg":"red"
+                    },
+                    "r":{
+                        "name":"Fill Engines",
+                        "id":"Upper Engine: Fill Engines",
+                        "bkg":"red"
+                    },
+                    "a":{
+                        "name":"Reactor",
+                        "id":"Reactor: Entered",
+                        "bkg":"cyan"
+                        },
+                    "s":{
+                        "name":"Start Reactor",
+                        "id":"Reactor: Start Reactor",
+                        "bkg":"cyan"
+                    },
+                    "d":{
+                        "name":"Unlock Manifolds",
+                        "id":"Reactor: Unlock Manifolds",
+                        "bkg":"cyan"
+                    },
+                    "j":{
+                        "name":"Security",
+                        "id":"Security: Entered",
+                        "bkg":"purple"
+                    },
+                    "k":{
+                        "name":"Accept Divert Power",
+                        "id":"Security: Accept Divert Power",
+                        "bkg":"purple"
+                    },
+                    "z":{
+                        "name":"Lower Engine",
+                        "id":"Lower Engine: Entered",
+                        "bkg":"blue"
+                    },
+                    "x":{
+                        "name":"Accept Diverted Power",
+                        "id":"Lower Engine: Accept Diverted Power",
+                        "bkg":"blue"
+                    },
+                    "c":{
+                        "name":"Align Engine Output",
+                        "id":"Lower Engine: Align Engine Output",
+                        "bkg":"blue"
+                    },
+                    "v":{
+                        "name":"Fill Engines",
+                        "id":"Lower Engine: Fill Engines",
+                        "bkg":"blue"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
+                    }
+                
+                }
+            
+
+            },
+            {
+                "name":"Left Center Map",
+                "btn":4,
+                "layout":[
+                    [
+                        {
+                            "btn":"q"
+                        },
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        }
+                    ],
+                    [
+                        
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"d"
+                        },
+                        {
+                            "btn":"f"
+                        },
+                        {
+                            "btn":"g"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"space"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "q":{
+                        "name":"MedBay",
+                        "id":"MedBay: Entered",
+                        "bkg":"orange"
+                    },
+                    "w":{
+                        "name":"End Inspect Start",
+                        "id":"MedBay: Inspect Sample Started",
+                        "bkg":"orange"
+                    },
+                    "e":{
+                        "name":"End Inspect Sample",
+                        "id":"MedBay: Inspect Sample Ended",
+                        "bkg":"orange"
+                    },
+                    "r":{
+                        "name":"Submit Scan",
+                        "id":"MedBay: Scan Submitted",
+                        "bkg":"orange"
+                    },
+                    "a":{
+                        "name":"Electrical",
+                        "id":"Electrical: Entered",
+                        "bkg":"yellow"
+                        },
+                    "s":{
+                        "name":"Divert Power",
+                        "id":"Electrical: Power Diverted",
+                        "bkg":"yellow"
+                    },
+                    "d":{
+                        "name":"Download Data",
+                        "id":"Electrical: Data Downloaded",
+                        "bkg":"yellow"
+                    },
+                    "f":{
+                        "name":"Calibrate Distributor",
+                        "id":"Electrical: Distributor calibrated",
+                        "bkg":"yellow"
+                    },"g":{
+                        "name":"Fix Wiring",
+                        "id":"Electrical: Wiring fixed",
+                        "bkg":"yellow"
+                    },
+                    "z":{
+                        "name":"Cafeteria",
+                        "id":"Cafeteria: Entered",
+                        "bkg":"red"
+                    },
+                    "x":{
+                        "name":"Download Data",
+                        "id":"Cafeteria: Downloaded Data",
+                        "bkg":"red"
+                    },
+                    "c":{
+                        "name":"Empty Garbage",
+                        "id":"Cafeteria: Emptied Garbage",
+                        "bkg":"red"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
+                    }
+                
+                }
+            
+
+            },
+            {
+                "name":"Bottom Right Map",
+                "btn":5,
+                "layout":[
+                    [
+                        {
+                            "btn":"q"
+                        },
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        }
+                        
+                    ],
+                    [
+                        {
+                            "btn":"u"
+                        },
+                        {
+                            "btn":"i"
+                        },
+                        {
+                            "btn":"o"
+                        },
+                        {
+                            "btn":"p"
+                        }
+                    ],
+                    [
+                        
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"d"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"space"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "q":{
+                        "name":"Storage",
+                        "id":"Storage: Entered",
+                        "bkg":"blue"
+                    },
+                    "w":{
+                        "name":"Fix Wiring",
+                        "id":"Storage: Fixed Wiring",
+                        "bkg":"blue"
+                    },
+                    "e":{
+                        "name":"Empty Chute",
+                        "id":"Storage: Empty Chute",
+                        "bkg":"blue"
+                    },
+                    "r":{
+                        "name":"Fuel Engines",
+                        "id":"Storage: Fuel Engines",
+                        "bkg":"blue"
+                    },
+                    "u":{
+                        "name":"Admin",
+                        "id":"Admin: Entered",
+                        "bkg":"green"
+                    },
+                    "i":{
+                        "name":"Card Swipe",
+                        "id":"Admin: Swiped Card",
+                        "bkg":"green"
+                    },
+                    "o":{
+                        "name":"Upload Data",
+                        "id":"Admin: Uploaded Data",
+                        "bkg":"green"
+                    },
+                    "p":{
+                        "name":"Fix Wiring",
+                        "id":"Admin: Fixed Wiring",
+                        "bkg":"green"
+                    },
+                    "a":{
+                        "name":"Comms",
+                        "id":"Comms: Entered",
+                        "bkg":"purple"
+                        },
+                    "s":{
+                        "name":"Download Data",
+                        "id":"Comms: Downloaded Data",
+                        "bkg":"purple"
+                    },
+                    "d":{
+                        "name":"Accept Diverted Power",
+                        "id":"Comms: Accepted Diverted Power",
+                        "bkg":"purple"
+                    },
+                    "z":{
+                        "name":"Shields",
+                        "id":"Shields: Entered",
+                        "bkg":"red"
+                    },
+                    "x":{
+                        "name":"Accept Diverted Power",
+                        "id":"Shields: Accepted Diverted Power",
+                        "bkg":"red"
+                    },
+                    "c":{
+                        "name":"Prime Shield",
+                        "id":"Shields: Primed Shield",
+                        "bkg":"red"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
+                    }
+                
+                }
+            
+
+            },
+            {
+                "name":"Top Right Map",
+                "btn":6,
+                "layout":[
+                    [
+                        {
+                            "btn":"q"
+                        },
+                        {
+                            "btn":"w"
+                        },
+                        {
+                            "btn":"e"
+                        },
+                        {
+                            "btn":"r"
+                        }
+                        
+                    ],
+                    [
+                        
+                        {
+                            "btn":"a"
+                        },
+                        {
+                            "btn":"s"
+                        },
+                        {
+                            "btn":"d"
+                        },
+                        {
+                            "btn":"f"
+                        },
+                        {
+                            "btn":"g"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"z"
+                        },
+                        {
+                            "btn":"x"
+                        },
+                        {
+                            "btn":"c"
+                        }
+                    ],
+                    [
+                        {
+                            "btn":"space"
+                        }
+                    ]
+
+                ],
+                "actions":{
+                    "q":{
+                        "name":"Weapons",
+                        "id":"Weapons: Entered",
+                        "bkg":"yellow"
+                    },
+                    "w":{
+                        "name":"Accept Diverted Power",
+                        "id":"Weapons: Accepted Diverted Power",
+                        "bkg":"yellow"
+                    },
+                    "e":{
+                        "name":"Clear Asteroids",
+                        "id":"Weapons: Cleared Asteroids",
+                        "bkg":"yellow"
+                    },
+                    "r":{
+                        "name":"Download Data",
+                        "id":"Weapons: Downloaded Data",
+                        "bkg":"yellow"
+                    },
+                    "a":{
+                        "name":"Navigation",
+                        "id":"Navigation: Entered",
+                        "bkg":"orange"
+                        },
+                    "s":{
+                        "name":"Accepted Diverted Power",
+                        "id":"Navigation: Accepted Diverted Power",
+                        "bkg":"orange"
+                    },
+                    "d":{
+                        "name":"Fix Wiring",
+                        "id":"Navigation: Fixed Wiring",
+                        "bkg":"orange"
+                    },
+                    "f":{
+                        "name":"Download Data",
+                        "id":"Navigation: Downloaded Data",
+                        "bkg":"orange"
+                    },
+                    "g":{
+                        "name":"Stabilize Steering",
+                        "id":"Navigation: Stabilize Steering",
+                        "bkg":"orange"
+                    },
+                    "z":{
+                        "name":"O2",
+                        "id":"O2: Entered",
+                        "bkg":"red"
+                    },
+                    "x":{
+                        "name":"Accept Diverted Power",
+                        "id":"O2: Accepted Diverted Power",
+                        "bkg":"red"
+                    },
+                    "c":{
+                        "name":"Clean O2 Filter",
+                        "id":"O2: Cleaned Filter",
+                        "bkg":"red"
+                    },
+                    "v":{
+                        "name":"Empty Chute",
+                        "id":"O2: Emptied Chute",
+                        "bkg":"red"
+                    },
+                    "space":{
+                        "name":"New Line",
+                        "id":" ",
+                        "bkg":"black"
                     }
                 
                 }

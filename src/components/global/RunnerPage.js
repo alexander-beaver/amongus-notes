@@ -42,8 +42,13 @@ export default class RunnerPage extends Component {
     }
 
     navigateToPage(page) {
-        if (page == 0) {
+        var maxpage = 6;
+        if (page === 0) {
             page = 10;
+        }
+
+        if(page > maxpage){ //TODO replace with page length
+            page = maxpage;
         }
         this.setState({page: page - 1});
         console.info("PAGE " + page);
@@ -67,8 +72,11 @@ export default class RunnerPage extends Component {
 
     handleKeyPress = (event) => {
 
+        if(event.keyCode === 32){
+            this.state.actions.push({time: this.state.timer, type: " "});
+            this.setState({alternator: !this.state.alternator});
 
-        if (event.key == "Left WinKey" || event.key == "Meta" || event.key == "Command" || event.key == "Alt" || event.key == "Control") { //HANDLE Improper Key Presses
+        }else if (event.key == "Left WinKey" || event.key == "Meta" || event.key == "Command" || event.key == "Alt" || event.key == "Control") { //HANDLE Improper Key Presses
             //DO NOTHING
         } else if (!isNaN(event.key)) {
             this.navigateToPage(event.key);
