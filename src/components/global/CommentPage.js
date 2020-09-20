@@ -3,7 +3,7 @@ import React, {Component} from "react";
 
 import "../../assets/css/materialIcons.css";
 import "../../assets/css/matchScoutGlobal.css";
-import {Button, Card, Input, Select} from 'antd';
+import {Button, Input, Select} from 'antd';
 import 'antd/dist/antd.css';
 import APIConnect from "../../APIConnect"; // or 'antd/dist/antd.less'
 const {TextArea} = Input;

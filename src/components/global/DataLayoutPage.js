@@ -49,16 +49,7 @@ export default class DataLayoutPage extends Component {
     }
 
     render() {
-        const selectBefore = (
-            <Select defaultValue="QUAL" style={{width: 90}} onChange={this.updateType}>
-                <Option value="PRAC">Prac</Option>
-                <Option value="QUAL">Qual</Option>
-                <Option value="ELIM">Elim</Option>
-                <Option value="TEST">Testing</Option>
 
-
-            </Select>
-        );
 
         return (
             <div>
